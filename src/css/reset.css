@@ -1,0 +1,95 @@
+:root {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+
+  color: #fafafa;
+  background-color: #1c1d20;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Reset styles */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* p:last-child {
+  margin-bottom: 0;
+} */
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* mobile - без медіа правила, щоб це правило примінялося від 0 до 768 */
+.container {
+  max-width: 375px;
+  min-width: 320px;
+  padding: 0 32px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
