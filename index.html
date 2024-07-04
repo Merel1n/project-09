@@ -100,11 +100,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Reviews</title>
 </head>
 
 <body>
-  <section class="reviews">
+  <section class="reviews container">
     <h2 class="reviews-title">REVIEWS</h2>
     <div class="swiper-container">
       <ul class="swiper-wrapper reviews-list">
@@ -137,9 +137,13 @@
       </ul>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
+
     </div>
+    <div id="error-message" class="not-found"></div>
   </section>
+
+  <script src="/src/js/api.js"></script>
+  <script src="/src/js/reviews.js"></script>
 </body>
 
 </html>
