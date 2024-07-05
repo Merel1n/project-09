@@ -1,6 +1,6 @@
 .section {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .benefits-container {
   display: flex;
@@ -87,8 +87,8 @@
 }
 @media (min-width: 768px) {
   .section {
-    margin-top: 48px;
-    margin-bottom: 48px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
   .benefits-content {
     gap: 64px;
@@ -106,8 +106,8 @@
 
 @media (min-width: 1440px) {
   .section {
-    margin-top: 82px;
-    margin-bottom: 82px;
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
   .benefits-container {
     flex-direction: row;
