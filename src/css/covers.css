@@ -1,10 +1,11 @@
 .covers {
   min-width: 320px;
+  height: 508px;
   padding: 32px 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../img/covers/bg-mobile.png);
+  background-image: url(./img/covers/bg-mobile.png);
 }
 body {
   margin: 0;
@@ -64,35 +65,36 @@ body {
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .covers {
-    background-image: url(../img/covers/bg-mobile@2x.png);
+    background-image: url(./img/covers/bg-mobile@2x.png);
   }
 }
 @media screen and (min-width: 768px) {
   .covers {
-    min-width: 768px;
+    max-width: 768px;
+    height: 960px;
     padding: 48px 0;
-    background-image: url(../img/covers/bg-tablet.png);
+    background-image: url(./img/covers/bg-tablet.png);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .covers {
-      background-image: url(../img/covers/bg-tablet@2x.png);
+      background-image: url(./img/covers/bg-tablet@2x.png);
     }
   }
 }
 @media screen and (min-width: 1158px) {
   .covers {
-    min-width: 1440px;
+    max-width: 1440px;
     padding: 84px 0px 80px 0px;
-    background-image: url(../img/covers/bg-desktop.png);
+    background-image: url(./img/covers/bg-desktop.png);
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .covers {
-      background-image: url(../img/covers/bg-desktop@2x.png);
+      background-image: url(./img/covers/bg-desktop@2x.png);
     }
   }
 }
