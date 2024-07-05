@@ -4,3 +4,4 @@ import { refs } from './js/refs';
 refs.reviewsList.innerHTML = reviewsCard(url);
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
+
