@@ -14,6 +14,7 @@ export async function renderReviews() {
       return;
     }
 
+    
     reviews.forEach(review => {
       const li = document.createElement('li');
       li.classList.add('swiper-slide');
