@@ -1,7 +1,7 @@
 .header {
   position: absolute;
   top: 32px;
-  left: 32px;
+  /* left: 32px; */
   width: 100%;
   background-color: transparent;
   display: flex;
@@ -10,10 +10,21 @@
 .logo {
   display: flex;
 }
+.logo-img {
+  background-color: transparent;
+}
+@media screen and (max-width: 320px) {
+  .header-container {
+    width: 300px;
+  }
+}
 @media screen and (max-width: 767px) {
   .burger-menu {
+    background-color: transparent;
+    border: none;
   }
-  .burger {
+  .header-container {
+    width: 343px;
   }
   .menu {
     display: none;
@@ -26,6 +37,32 @@
   .burger-menu {
     display: none;
   }
+  .nav {
+    display: flex;
+    align-items: flex-start;
+  }
+  .menu {
+    margin-right: 151px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
+    background-color: transparent;
+    border: none;
+  }
+  .header-link {
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 163px;
+    background: #ed3b44;
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1440px) {
+  .menu {
+    margin-right: 487px;
+  }
 }
