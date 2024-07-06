@@ -1,7 +1,9 @@
+.section-covers {
+  padding: 32px 0px;
+}
 .covers {
   min-width: 320px;
   height: 508px;
-  padding: 32px 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -15,41 +17,45 @@ body {
 *::after {
   box-sizing: border-box;
 }
-.content {
+.covers-content {
   position: relative;
 }
 .marquee {
   position: absolute;
   right: -800px;
   left: 0;
+  height: 508px;
   overflow: hidden;
 }
 
 .marquee-inner {
   display: flex;
   transform: rotate(16deg);
-  margin: 20px;
+  margin: 40px;
+  bottom: 0;
 }
 
 .marquee-line {
   flex-shrink: 0;
-  margin-right: 10px;
+  padding-top: 20px;
+  margin-right: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100% / 10);
+  width: calc(100% / 3);
+  /* width: calc((100% - 84px) / 3); */
   white-space: nowrap;
-  animation-name: marqueeLine;
+  /* animation-name: marqueeLine;
   animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; */
+}
+.js-marquee-line {
+  animation-name: marqueeLine;
+  animation-duration: 10s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
-/* .js-marquee-line {
-  animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-} */
 
 @keyframes marqueeLine {
   from {
@@ -69,11 +75,19 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .section-covers {
+    padding: 48px 0px;
+  }
   .covers {
     max-width: 768px;
     height: 960px;
-    padding: 48px 0;
     background-image: url(./img/covers/bg-tablet.png);
+  }
+  .covers-content {
+    position: relative;
+  }
+  .marquee {
+    height: 960px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -82,19 +96,30 @@ body {
     .covers {
       background-image: url(./img/covers/bg-tablet@2x.png);
     }
+    .covers-content {
+      position: relative;
+    }
   }
 }
 @media screen and (min-width: 1158px) {
+  .section-covers {
+    padding: 80px 0px;
+  }
   .covers {
     max-width: 1440px;
-    padding: 84px 0px 80px 0px;
     background-image: url(./img/covers/bg-desktop.png);
+  }
+  .covers-content {
+    position: relative;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .covers {
       background-image: url(./img/covers/bg-desktop@2x.png);
+    }
+    .covers-content {
+      position: relative;
     }
   }
 }
