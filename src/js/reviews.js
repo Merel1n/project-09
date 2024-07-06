@@ -29,7 +29,7 @@ export async function renderReviews() {
     });
 
     const swiper = new Swiper('.swiper-container', {
-      // modules: [Navigation, Pagination, Keyboard],
+      
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -48,10 +48,7 @@ export async function renderReviews() {
           spaceBetween: 16,
         }
       },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
+
       keyboard: {
         enabled: true,
         onlyInViewport: false,
