@@ -14,14 +14,14 @@ export async function renderReviews() {
       return;
     }
 
-    
+
     reviews.forEach(review => {
       const li = document.createElement('li');
       li.classList.add('swiper-slide');
       li.innerHTML = `
         <div class="review">
           <img src="${review.avatar_url}" alt="${review.author}'s avatar">
-          <p>${review.author}</p>
+          <h3>${review.author}</h3>
           <p>${review.review}</p>
         </div>
       `;
