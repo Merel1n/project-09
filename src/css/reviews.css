@@ -1,3 +1,11 @@
+.reviews-title{
+  font-weight: 600;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: -0.02em;
+color: rgba(250, 250, 250, 0.4);
+}
+
 .swiper-button-disabled {
   opacity: 0.5;
   cursor: not-allowed;
@@ -9,7 +17,7 @@
   margin-top: 20px;
 }
 
-.review {
+.swiper-slide {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
   padding: 32px 24px;
@@ -17,14 +25,14 @@
   height: 302px;
 }
 
-.review img {
+.review-img {
   width: 48px;
-  height: 48 px;
+  height: 48px;
 
   border-radius: 50%;
 }
 
-.review p {
+.review-comment {
   margin: 10px 0;
   font-family: "Inter Tight", sans-serif;
 font-weight: 500;
@@ -34,13 +42,10 @@ letter-spacing: -0.02em;
 color: rgba(250, 250, 250, 0.6);
 }
 
-.review h3{
+.review-author{
 font-weight: 600;
 font-size: 20px;
 line-height: 1.5;
 letter-spacing: -0.02em;
 color: #fafafa;
-}
-.swiper-wrapper{
-  gap: 16px;
 }

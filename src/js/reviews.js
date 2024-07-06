@@ -4,7 +4,11 @@ import { refs } from './refs.js';
 import Swiper from 'swiper/bundle';
 
 
-import 'swiper/css/bundle';
+import 'swiper/css';
+import 'swiper/css/navigation'
+import 'swiper/css/keyboard'
+
+
 export async function renderReviews() {
   try {
     const reviews = await getReviews();
@@ -19,23 +23,35 @@ export async function renderReviews() {
       const li = document.createElement('li');
       li.classList.add('swiper-slide');
       li.innerHTML = `
-        <div class="review">
-          <img src="${review.avatar_url}" alt="${review.author}'s avatar">
-          <h3>${review.author}</h3>
-          <p>${review.review}</p>
-        </div>
+
+          <img class="review-img" src="${review.avatar_url}" alt="${review.author}'s avatar">
+          <h3 class="review-author">${review.author}</h3>
+          <p class="review-comment">${review.review}</p>
+
       `;
       refs.reviewsContainer.appendChild(li);
     });
 
     const swiper = new Swiper('.swiper-container', {
+
       modules: [Navigation, Pagination, Keyboard],
-      slidesPerView: 1,
-      spaceBetween: 10,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      breakpoints: {
+       320: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+        1440: {
+          slidesPerView: 'auto',
+          spaceBetween: 16,
+        }},
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
