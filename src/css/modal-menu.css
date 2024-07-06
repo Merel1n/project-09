@@ -1,0 +1,67 @@
+.modal-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.2),
+      rgba(46, 47, 66, 0.2)
+    ),
+    url(../img/hero/bg-mobile.png);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.modal-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 16px 64px 16px;
+}
+.close-btn {
+  position: absolute;
+  top: 32px;
+  right: 16px;
+  border: none;
+  background-color: transparent;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  line-height: 0;
+}
+.close-icon {
+  object-fit: cover;
+}
+.modal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+.modal-item {
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
+}
+.modal-item:hover,
+.modal-item:focus {
+  color: #ed3b44;
+}
+.modal-link {
+  border-radius: 60px;
+  padding: 18px 24px;
+  min-width: 163px;
+  background: #ed3b44;
+  text-align: center;
+}
