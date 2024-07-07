@@ -1,4 +1,4 @@
-.section {
+.section-faq {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -62,17 +62,21 @@
 }
 
 @media (min-width: 768px) {
-  .section {
+  .section-faq {
     padding-top: 48px;
     padding-bottom: 48px;
   }
 }
 
 @media (min-width: 1440px) {
-  .section {
+  .section-faq {
     padding-top: 82px;
     padding-bottom: 82px;
-    width: 50%;
+  }
+  .faq-ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .faq-el {
     display: flex;
@@ -80,6 +84,5 @@
     justify-content: space-between;
     padding-top: 20px;
     padding-left: 20px;
-    width: 50%;
   }
 }
