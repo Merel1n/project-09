@@ -19,7 +19,7 @@ export async function renderReviews() {
 
     reviews.forEach(review => {
       const li = document.createElement('li');
-      li.classList.add('swiper-slide');
+      li.classList.add('swiper-slide-reviews');
       li.innerHTML = `
         <img class="review-img" src="${review.avatar_url}" alt="${review.author}'s avatar">
         <h3 class="review-author">${review.author}</h3>
@@ -29,7 +29,7 @@ export async function renderReviews() {
     });
 
     const swiper = new Swiper('.swiper-container', {
-      
+
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
