@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/project-09/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-09/assets/vendor-3ff740d6.js">
     <link rel="stylesheet" href="/project-09/assets/vendor-1fb87061.css">
-    <link rel="stylesheet" href="/project-09/assets/index-37c21708.css">
+    <link rel="stylesheet" href="/project-09/assets/index-1eb80f97.css">
   </head>
   <body>
     <header class="header">
@@ -105,18 +105,31 @@
       </div>
     </div>
 
-    <ul class="accordion-container">
-      <li class="ac">
+    <ul class="accordion-container am-accordion-list">
+      <li class="ac am-accordion-item">
         <div class="ac-wrapper">
           <h2 class="about-me-title ac-header">About me</h2>
-          <button type="button" class="ac-trigger">
-            <svg width="20" height="20" aria-label="icon up arrow">
+          <button type="button" class="ac-trigger am-accordion-trigger">
+            <svg
+              class="am-icon-button-down"
+              width="20"
+              height="20"
+              aria-label="icon down arrow"
+            >
+              <use href="/project-09/assets/icons-sprite-cd92bc46.svg#icon-down-arrow"></use>
+            </svg>
+            <svg
+              class="am-icon-button-up"
+              width="20"
+              height="20"
+              aria-label="icon up arrow"
+            >
               <use href="/project-09/assets/icons-sprite-cd92bc46.svg#icon-up-arrow"></use>
             </svg>
           </button>
         </div>
-        <div class="ac-panel about-me">
-          <p class="ac-text">
+        <div class="ac-panel am-accordion-panel">
+          <p class="ac-text am-accordion-text">
             I am Lloyd Jefferson, a talented programmer with extensive expertise
             in software development. I have an understanding of different
             programming languages ​​and technologies, always ready to improve my
@@ -125,7 +138,7 @@
             of analytical skills and am able to effectively solve even the most
             difficult tasks encountered on the way.
           </p>
-          <p class="ac-text">
+          <p class="ac-text am-accordion-text">
             Able to work both independently and in a team. I can effectively
             cooperate with colleagues, exchanging ideas and finding optimal
             solutions. Professional maturity allows you to calmly cope with
@@ -141,61 +154,83 @@
       </li>
 
       <li class="ac am-accordion-item">
-
         <div class="ac-wrapper">
           <h2 class="about-me-title ac-header">Role</h2>
-          <button type="button" class="ac-trigger">
-            <svg width="20" height="20" aria-label="icon down arrow">
+          <button type="button" class="ac-trigger am-accordion-trigger">
+            <svg
+              class="am-icon-button-down"
+              width="20"
+              height="20"
+              aria-label="icon down arrow"
+            >
               <use href="/project-09/assets/icons-sprite-cd92bc46.svg#icon-down-arrow"></use>
+            </svg>
+            <svg
+              class="am-icon-button-up"
+              width="20"
+              height="20"
+              aria-label="icon up arrow"
+            >
+              <use href="/project-09/assets/icons-sprite-cd92bc46.svg#icon-up-arrow"></use>
             </svg>
           </button>
         </div>
-        <div class="ac-panel role">
-          <p class="ac-text">Frontend development</p>
-          <p class="ac-text">HeadlessCMS,Wordpress</p>
-          <p class="ac-text">Blender(enjoy)</p>
+        <div class="ac-panel am-accordion-panel role">
+          <p class="ac-text am-accordion-text">Frontend development</p>
+          <p class="ac-text am-accordion-text">HeadlessCMS,Wordpress</p>
+          <p class="ac-text am-accordion-text">Blender(enjoy)</p>
         </div>
       </li>
 
-
       <li class="ac am-accordion-item">
-
         <div class="ac-wrapper">
           <h2 class="about-me-title ac-header">Education</h2>
-          <button type="button" class="ac-trigger">
-            <svg width="20" height="20" aria-label="icon down arrow">
+          <button type="button" class="ac-trigger am-accordion-trigger">
+            <svg
+              class="am-icon-button-down"
+              width="20"
+              height="20"
+              aria-label="icon down arrow"
+            >
               <use href="/project-09/assets/icons-sprite-cd92bc46.svg#icon-down-arrow"></use>
+            </svg>
+            <svg
+              class="am-icon-button-up"
+              width="20"
+              height="20"
+              aria-label="icon up arrow"
+            >
+              <use href="/project-09/assets/icons-sprite-cd92bc46.svg#icon-up-arrow"></use>
             </svg>
           </button>
         </div>
-        <div class="ac-panel education">
-          <p class="ac-text education-first">
+        <div class="ac-panel am-accordion-panel education">
+          <p class="ac-text am-accordion-text education-first">
             2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
           </p>
-          <p class="ac-text">
+          <p class="ac-text am-accordion-text">
             2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
             New York
           </p>
-          <p class="ac-text">
+          <p class="ac-text am-accordion-text">
             2020 - 2022 / Advanced Blender Animation Techniques, Udemy
           </p>
         </div>
       </li>
     </ul>
 
-    <div class="swiper">
-      <ul class="swiper-wrapper">
-        <li class="swiper-slide">HTML/CSS</li>
-        <li class="swiper-slide">JavaScript</li>
-        <li class="swiper-slide">React</li>
-        <li class="swiper-slide">Node.js</li>
-        <li class="swiper-slide">React Native</li>
-        <li class="swiper-slide">Soft skills</li>
+    <div class="swiper am-swiper">
+      <ul class="swiper-wrapper am-swiper-list">
+        <li class="swiper-slide am-swiper-item">HTML/CSS</li>
+        <li class="swiper-slide am-swiper-item">JavaScript</li>
+        <li class="swiper-slide am-swiper-item">React</li>
+        <li class="swiper-slide am-swiper-item">Node.js</li>
+        <li class="swiper-slide am-swiper-item">React Native</li>
+        <li class="swiper-slide am-swiper-item">Soft skills</li>
       </ul>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-scrollbar"></div>
+      <div class="swiper-button-prev am-swiper-button-prev"></div>
+      <div class="swiper-button-next am-swiper-button-next"></div>
+      <div class="swiper-scrollbar am-swiper-scrollbar"></div>
     </div>
   </div>
 </section>
