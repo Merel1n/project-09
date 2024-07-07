@@ -42,7 +42,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100% / 3);
+  width: calc(100% / 4);
   /* width: calc((100% - 84px) / 3); */
   white-space: nowrap;
   /* animation-name: marqueeLine;

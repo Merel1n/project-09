@@ -20,16 +20,17 @@ export async function renderReviews() {
     reviews.forEach(review => {
       const li = document.createElement('li');
       li.classList.add('swiper-slide');
+      li.classList.add('reviews-slide');
       li.innerHTML = `
         <img class="review-img" src="${review.avatar_url}" alt="${review.author}'s avatar">
         <h3 class="review-author">${review.author}</h3>
         <p class="review-comment">${review.review}</p>
       `;
-      refs.reviewsContainer.appendChild(li);
+      refs.reviewsList.appendChild(li);
     });
 
     const swiper = new Swiper('.swiper-container', {
-      // modules: [Navigation, Pagination, Keyboard],
+
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -48,10 +49,7 @@ export async function renderReviews() {
           spaceBetween: 16,
         }
       },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
+
       keyboard: {
         enabled: true,
         onlyInViewport: false,

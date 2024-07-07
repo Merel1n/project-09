@@ -18,8 +18,8 @@ function removeClassToListItems(idSelector, className) {
 }
 
 const options = {
-  rootMargin: '100px',
-  threshold: 0.5,
+  rootMargin: '20px 0px',
+  threshold: 0,
 };
 
 function onItersection(entries) {
