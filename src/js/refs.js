@@ -1,5 +1,5 @@
 export const refs = {
-  reviewsContainer: document.querySelector('.swiper-wrapper'),
+  reviewsList: document.querySelector('.reviews-wrapper'),
   errorMessage: document.getElementById('error-message'),
   nextButton: document.querySelector('.swiper-button-next'),
   prevButton: document.querySelector('.swiper-button-prev'),
@@ -11,3 +11,5 @@ export const refs = {
   menu: document.querySelector('.menu'),
   menuList: document.querySelector('.menu-list'),
 };
+  
+
