@@ -13,9 +13,9 @@
     />
     
     <script type="module" crossorigin src="/project-09/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/project-09/assets/vendor-f68be788.js">
-    <link rel="stylesheet" href="/project-09/assets/vendor-b51df72b.css">
-    <link rel="stylesheet" href="/project-09/assets/index-a943a87f.css">
+    <link rel="modulepreload" crossorigin href="/project-09/assets/vendor-7efac944.js">
+    <link rel="stylesheet" href="/project-09/assets/vendor-1fb87061.css">
+    <link rel="stylesheet" href="/project-09/assets/index-c8c4e871.css">
   </head>
   <body>
     <header class="header">
@@ -752,14 +752,18 @@
           type="email"
           class="input-form-work-together"
           placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          required
+          name="email"
         />
       </div>
-      <div class="textarea-wrapper">
-        <textarea
-          class="textarea-form-work-together"
+      <div class="comments-wrapper">
+        <input
+          class="comments-form-work-together"
           placeholder="comments"
-          rows="2"
-        ></textarea>
+          name="comments"
+          required
+        ></input>
       </div>
       <button type="submit" class="button-form-work-together">Send</button>
     </form>
