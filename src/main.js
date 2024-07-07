@@ -4,6 +4,7 @@ import { refs } from './js/refs';
 import './js/reviews';
 import './js/projects';
 import './js/work-together';
+import './js/about-me';
 import { observer } from './js/covers';
 import { isOpenMenu } from './js/modal-menu';
 import { closeMenu } from './js/modal-menu';
