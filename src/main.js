@@ -1,3 +1,5 @@
+import './js/reviews';
+import './js/faq';
 import { refs } from './js/refs';
 import './js/reviews';
 import './js/projects';
