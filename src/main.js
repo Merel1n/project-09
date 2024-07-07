@@ -1,9 +1,11 @@
-import { refs } from './js/refs';
 import './js/reviews';
+import './js/faq';
+import { refs } from './js/refs';
+
 import './js/projects';
 import { observer } from './js/covers';
 observer.observe(refs.sectionCovers);
-import './js/faq';
+
 import './js/work-together';
 import { isOpenMenu } from './js/modal-menu';
 import { closeMenu } from './js/modal-menu';
