@@ -1,7 +1,7 @@
 .projects-items {
     min-width: 320px;
     height: 812px;
-    background: linear-gradient(rgb(255, 255, 255) 50%, rgba(36, 37, 39, 1) 50%);
+    background: linear-gradient(rgb(255, 255, 255) 53%, rgba(36, 37, 39, 1) 47%);
     border-radius: 24px;
 }
 
@@ -36,10 +36,32 @@
 }
 
 .projects-img {
-    padding: 100px 16px;
+
+    margin: 0 auto;
+    margin-top: 132px;
 }
 
-/* Programming Across Borders: Ideas, Technologies, Innovations */
+@media screen and (min-width: 768px) {
+    .projects-img {
+        margin-top: 184px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .projects-img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-self: right;
+        margin: 0;
+        vertical-align: top;
+        align-items: right;
+        gap: 100px;
+    }
+}
+
+
 .projects-list-text {
     font-family: 'Inter Tight';
     font-style: normal;
@@ -48,36 +70,112 @@
     line-height: 28px;
     letter-spacing: -0.03em;
     color: #1C1D20;
+    padding-left: 32px;
+    padding-top: 96px;
 }
 
-/* content */
-.project-tech {
+@media screen and (min-width: 768px) {
+    .projects-list-text {
+        font-size: 44px;
+        line-height: 44px;
+        padding-left: 64px;
+        padding-top: 164px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .projects-list-text {
+        font-size: 44px;
+        line-height: 44px;
+        padding-left: 64px;
+        padding-top: 223px;
+    }
+}
+
+.projects-tech {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: flex-start;
     gap: 6px;
-    margin-left: 32px;
-    margin-top: 32px;
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .projects-tech {
+        padding-left: 64px;
+        padding-top: 64px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .projects-tech {
+        padding-left: 64px;
+        padding-top: 64px;
+    }
 }
 
 .projects-tech-items {
-    /* block */
-
     box-sizing: border-box;
-
-    /* Auto layout */
-    /* display: flex;
-    flex-direction: row; */
-    /* justify-content: center;
-    align-items: center; */
+    display: block;
     text-align: center;
     padding: 13px 18px;
-    /* gap: 10px; */
     max-width: 100px;
-
     border: 1px solid rgba(28, 29, 32, 0.2);
     color: rgba(28, 29, 32, 1);
     border-radius: 60px;
+}
+
+@media screen and (min-width: 768px) {
+    .projects-tech-items {
+        padding: 18px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .projects-tech-items {
+        padding: 18px;
+    }
+}
+
+.see-project {
+    /* btn */
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #FAFAFA;
+    display: block;
+    padding: 13px 32px;
+    align-items: center;
+    background: #ED3B44;
+    border-radius: 60px;
+    margin-left: 32px;
+    margin-top: 32px;
+    width: 141px;
+}
+
+@media screen and (min-width: 768px) {
+    .see-project {
+        padding: 18px 50px;
+        margin-left: 64px;
+        /* See project */
+
+        width: 177px;
+        height: 55px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .see-project {
+        padding: 18px 50px;
+        margin-left: 64px;
+        width: 180px;
+        height: 55px;
+        color: #FAFAFA;
+    }
 }
