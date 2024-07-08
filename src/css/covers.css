@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(./img/covers/bg-mobile.png);
+  background-image: url(../img/covers/bg-mobile.png);
 }
 body {
   margin: 0;
@@ -43,12 +43,7 @@ body {
   align-items: center;
   justify-content: center;
   width: calc(100% / 4);
-  /* width: calc((100% - 84px) / 3); */
   white-space: nowrap;
-  /* animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite; */
 }
 .js-marquee-line {
   animation-name: marqueeLine;
@@ -71,7 +66,7 @@ body {
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .covers {
-    background-image: url(./img/covers/bg-mobile@2x.png);
+    background-image: url(../img/covers/bg-mobile@2x.png);
   }
 }
 @media screen and (min-width: 768px) {
@@ -81,7 +76,7 @@ body {
   .covers {
     max-width: 768px;
     height: 960px;
-    background-image: url(./img/covers/bg-tablet.png);
+    background-image: url(../img/covers/bg-tablet.png);
   }
   .covers-content {
     position: relative;
@@ -94,20 +89,20 @@ body {
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .covers {
-      background-image: url(./img/covers/bg-tablet@2x.png);
+      background-image: url(../img/covers/bg-tablet@2x.png);
     }
     .covers-content {
       position: relative;
     }
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
   .section-covers {
     padding: 80px 0px;
   }
   .covers {
     max-width: 1440px;
-    background-image: url(./img/covers/bg-desktop.png);
+    background-image: url(../img/covers/bg-desktop.png);
   }
   .covers-content {
     position: relative;
@@ -116,7 +111,7 @@ body {
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .covers {
-      background-image: url(./img/covers/bg-desktop@2x.png);
+      background-image: url(../img/covers/bg-desktop@2x.png);
     }
     .covers-content {
       position: relative;

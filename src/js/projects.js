@@ -1,4 +1,4 @@
-// const swiper_pr = new Swiper('.swiper-container', {
+// const swiper_pr = new Swiper('.swiper_pr', {
 //     // modules: [Navigation, Pagination, Keyboard],
 //     navigation: {
 //         nextEl: '.swiper-button-next',
@@ -19,7 +19,7 @@
 //         }
 //     },
 //     pagination: {
-//         el: '.swiper-pagination',
+//         el: '.swiper_pr-pagination',
 //         clickable: true,
 //     },
 //     keyboard: {

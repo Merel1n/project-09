@@ -1,3 +1,8 @@
+.page-projects {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .projects-items {
     min-width: 320px;
     height: 812px;
@@ -17,7 +22,7 @@
 
 @media screen and (min-width: 1440px) {
     .projects-items {
-        min-width: 1376px;
+        min-width: 1440px;
         height: 625px;
         border-radius: 24px;
         background: linear-gradient(to right, rgb(255, 255, 255) 50%, rgba(36, 37, 39, 1) 50%);
@@ -123,7 +128,7 @@
     text-align: center;
     padding: 13px 18px;
     max-width: 100px;
-    border: 1px solid rgba(28, 29, 32, 0.2);
+    border: 1px solid rgba(28, 29, 32, 0.4);
     color: rgba(28, 29, 32, 1);
     border-radius: 60px;
 }
@@ -163,8 +168,6 @@
     .see-project {
         padding: 18px 50px;
         margin-left: 64px;
-        /* See project */
-
         width: 177px;
         height: 55px;
     }
