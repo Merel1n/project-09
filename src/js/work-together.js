@@ -5,15 +5,22 @@ import 'izitoast/dist/css/iziToast.min.css';
 const refs = {
   input: document.querySelector('.input-form-work-together'),
   form: document.querySelector('.form-work-together'),
-  inputComments: document.querySelector('.textarea-form-work-together'),
+  inputComments: document.querySelector('.comments-form-work-together'),
   modal: document.querySelector('.modal-backdrop'),
+  inputWrapper: document.querySelector('.input-wrapper'),
+  commentsWrapper: document.querySelector('.comments-wrapper'),
+  inputSuccess: document.querySelector('.input-success'),
+  inputInvalid: document.querySelector('.input-invalid'),
 };
 
 refs.form.addEventListener('submit', async e => {
   e.preventDefault();
 
-  const { email, comments } = e.target.elements;
+  refs.inputSuccess.classList.add('visually-hidden');
+  refs.inputWrapper.classList.remove('valid');
+  refs.commentsWrapper.classList.remove('filling');
 
+  const { email, comments } = e.target.elements;
   const data = { email: email.value.trim(), comment: comments.value.trim() };
 
   try {
@@ -45,5 +52,27 @@ refs.modal.addEventListener('click', e => {
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' || e.key === 'Esc') {
     refs.modal.classList.add('visually-hidden');
+  }
+});
+// =============================
+refs.input.addEventListener('input', () => {
+  if (refs.input.validity.valid) {
+    refs.inputSuccess.classList.remove('visually-hidden');
+    refs.inputInvalid.classList.add('visually-hidden');
+    refs.inputWrapper.classList.add('valid');
+    refs.inputWrapper.classList.remove('invalid');
+  } else {
+    refs.inputSuccess.classList.add('visually-hidden');
+    refs.inputInvalid.classList.remove('visually-hidden');
+    refs.inputWrapper.classList.remove('valid');
+    refs.inputWrapper.classList.add('invalid');
+  }
+});
+
+refs.inputComments.addEventListener('input', () => {
+  if (refs.inputComments.value.trim().length > 0) {
+    refs.commentsWrapper.classList.add('filling');
+  } else {
+    refs.commentsWrapper.classList.remove('filling');
   }
 });

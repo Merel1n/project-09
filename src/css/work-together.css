@@ -111,6 +111,10 @@
   padding: 0;
   width: 100%;
   cursor: pointer;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and (min-width: 768px) {
@@ -127,6 +131,7 @@
 .comments-form-work-together::placeholder {
   color: rgba(250, 250, 250, 0.6);
 }
+
 .input-wrapper,
 .comments-wrapper {
   position: relative;
@@ -141,6 +146,13 @@
   left: 0;
   width: calc(100% + 16px);
 }
+.input-wrapper.valid::after {
+  background-color: #3cbc81;
+}
+.input-wrapper.invalid::after {
+  background-color: #e74a3b;
+}
+
 @media screen and (min-width: 768px) {
   .input-wrapper::after {
     width: 100%;
@@ -156,6 +168,10 @@
   left: 0;
   width: calc(100% + 16px);
 }
+.comments-wrapper.filling::after {
+  background-color: rgba(250, 250, 250, 0.5);
+}
+
 @media screen and (min-width: 768px) {
   .comments-wrapper::after {
     width: 100%;
@@ -213,6 +229,16 @@
   display: flex;
   gap: 4px;
 }
+
+@media screen and (max-width: 374px) {
+  .contacts-list-work-together {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contacts-list-work-together {
     gap: 8px;
@@ -241,6 +267,24 @@
   border-color: inherit;
 }
 
+.input-success {
+  font-size: 14px;
+  line-height: 1.28;
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  color: #3cbc81;
+}
+
+.input-invalid {
+  font-size: 14px;
+  line-height: 1.28;
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  color: #e74a3b;
+}
+
 /* modal */
 
 .modal-backdrop {
@@ -250,7 +294,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 1000;
 
   display: flex;
   justify-content: center;
