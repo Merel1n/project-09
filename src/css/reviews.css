@@ -1,3 +1,7 @@
+
+.reviews {
+  padding: 82px 0 82px 0 ;
+}
 .reviews-title {
   font-weight: 600;
   font-size: 16px;
@@ -53,6 +57,7 @@
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.02em;
+  padding-bottom: 32px;
 }
 
 .reviews-container {
@@ -76,9 +81,11 @@ cursor: pointer;
   justify-content: center;
   margin-top: 32px;
   position: relative;
-
-
+  gap:20px;
+  flex-wrap: wrap;
 }
+
+
 
 
 
@@ -89,7 +96,7 @@ cursor: pointer;
   height: 32px;
   background: url(../img/arrow-narrow-right.svg)no-repeat center center;
   background-size: contain;
-  
+
 }
 
 .reviews-btn-prev::after {
@@ -100,4 +107,10 @@ cursor: pointer;
   background: url(../img/arrow-narrow-left.svg)no-repeat center center;
   background-size: contain;
 
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-navigation{
+padding-left:  784px;
+  }
 }
