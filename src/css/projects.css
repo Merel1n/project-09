@@ -42,7 +42,7 @@
     .projects-picture {
         border-radius: 0 24px 24px 0;
         width: 688px;
-
+        height: 637px;
         padding-left: 32px;
         padding-right: 32px;
     }
@@ -176,7 +176,6 @@
     border-radius: 60px;
     min-width: 141px;
     margin-bottom: 32px;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -184,6 +183,5 @@
         padding: 18px 50px;
         min-width: 177px;
         margin-bottom: 64px;
-
     }
 }
