@@ -125,18 +125,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 12px;
+}
+
+.am-icon-button-down,
+.am-icon-button-up {
+  display: none;
+}
+
+.am-accordion-item .open {
+  display: block;
 }
 
 .ac-panel.am-accordion-panel {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
-.ac-panel.role,
-.ac-panel.education {
+.ac-panel.am-accordion-panel.role,
+.ac-panel.am-accordion-panel.education {
   max-width: 465px;
   gap: 10px;
 }
