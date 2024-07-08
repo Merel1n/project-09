@@ -30,10 +30,10 @@ export async function renderReviews() {
     });
 
     const swiper = new Swiper('.swiper-container', {
-
+      direction: 'horizontal',
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.reviews-btn-next',
+        prevEl: '.reviews-btn-prev',
       },
       breakpoints: {
         320: {
@@ -47,6 +47,7 @@ export async function renderReviews() {
         1440: {
           slidesPerView: 4,
           spaceBetween: 16,
+
         }
       },
 
