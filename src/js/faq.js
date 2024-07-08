@@ -17,10 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const currentIcon = iconUse.getAttribute('href');
 
       if (currentIcon === './img/icons-sprite.svg#icon-down-arrow') {
-        console.log('UP');
         iconUse.setAttribute('href', './img/icons-sprite.svg#icon-up-arrow');
       } else {
-        console.log('DOWN');
         iconUse.setAttribute('href', './img/icons-sprite.svg#icon-down-arrow');
       }
     });
