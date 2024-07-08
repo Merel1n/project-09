@@ -6,7 +6,7 @@
     ),
     url(../img/hero/bg-mobile.png);
   min-width: 320px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 @media screen and (max-width: 374px) {
   .hero-list {
@@ -101,7 +101,7 @@
       ),
       url(../img/hero/bg-desktop.png);
     min-width: 1440px;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
   }
   .hero-title {
     padding-right: 178px;
