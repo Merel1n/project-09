@@ -109,8 +109,3 @@ cursor: pointer;
 
 }
 
-@media screen and (min-width: 1440px) {
-  .swiper-navigation{
-padding-left:  784px;
-  }
-}
