@@ -60,6 +60,13 @@
   padding: 7px;
   background: #1c1d20;
 }
+.an-icon-button-down,
+.an-icon-button-up {
+  display: none;
+}
+.faq-el .open {
+  display: block;
+}
 
 @media (min-width: 768px) {
   .section-faq {
@@ -90,5 +97,9 @@
   }
   .faq-el:nth-child(2n-1) {
     border-right: 1px solid rgba(250, 250, 250, 0.4);
+  }
+  .an-icon-button-down,
+  .an-icon-button-up {
+    display: none;
   }
 }
