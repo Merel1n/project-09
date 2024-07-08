@@ -14,6 +14,7 @@
 }
 .logo {
   display: flex;
+  gap: 8px;
 }
 .logo-img {
   border-radius: 18px;
