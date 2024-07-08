@@ -1,4 +1,4 @@
-<section class="container section-work-together">
+<section class="container section-work-together" id="work-together">
   <div class="inside-wrapper">
     <h2 class="title-work-together">
       <picture>
@@ -66,14 +66,18 @@
           type="email"
           class="input-form-work-together"
           placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          required
+          name="email"
         />
       </div>
-      <div class="textarea-wrapper">
-        <textarea
-          class="textarea-form-work-together"
+      <div class="comments-wrapper">
+        <input
+          class="comments-form-work-together"
           placeholder="comments"
-          rows="2"
-        ></textarea>
+          name="comments"
+          required
+        ></input>
       </div>
       <button type="submit" class="button-form-work-together">Send</button>
     </form>
@@ -93,9 +97,9 @@
     </ul>
     <div class="modal-backdrop visually-hidden">
       <div class="modal-wrapper">
-        <svg class="close-icon">
-          <use href="../img/icons-sprite.svg#icon-close"></use>
-        </svg>
+        <button type="button" class="close-button"><svg class="close-icon">
+          <use href="./img/icons-sprite.svg#icon-close" ></use>
+        </svg></button>
         <h1 class="modal-wrapper-title">
           Thank you for your interest in cooperation!
         </h1>
