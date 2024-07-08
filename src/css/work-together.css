@@ -274,13 +274,24 @@
     max-width: 492px;
   }
 }
-
-.close-icon {
+.close-button {
   position: absolute;
   right: 20px;
   top: 20px;
+  background: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.close-icon {
   width: 22px;
   height: 22px;
+  pointer-events: none;
 }
 @media screen and (min-width: 768px) {
   .close-icon {

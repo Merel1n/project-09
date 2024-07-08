@@ -6,6 +6,7 @@ const refs = {
   input: document.querySelector('.input-form-work-together'),
   form: document.querySelector('.form-work-together'),
   inputComments: document.querySelector('.textarea-form-work-together'),
+  modal: document.querySelector('.modal-backdrop'),
 };
 
 refs.form.addEventListener('submit', async e => {
@@ -20,13 +21,8 @@ refs.form.addEventListener('submit', async e => {
     if (!posted) {
       return;
     }
-    // iziToast.show({
-    //   message: 'Contacts were posted successfully.',
-    //   position: 'topCenter',
-    //   backgroundColor: '#3CBC81',
-    //   messageColor: '#fafafa',
-    //   titleColor: '#fafafa',
-    // });
+    refs.modal.classList.remove('visually-hidden');
+
     refs.form.reset();
   } catch (error) {
     iziToast.show({
@@ -36,5 +32,18 @@ refs.form.addEventListener('submit', async e => {
       messageColor: '#fafafa',
       titleColor: '#fafafa',
     });
+  }
+});
+
+refs.modal.addEventListener('click', e => {
+  const { className } = e.target;
+  if (className === 'modal-backdrop' || className === 'close-button') {
+    refs.modal.classList.add('visually-hidden');
+  }
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' || e.key === 'Esc') {
+    refs.modal.classList.add('visually-hidden');
   }
 });
