@@ -8,6 +8,7 @@ new Accord('.accord-container', {
 
 new Swiper('.swiper-am', {
   direction: 'horizontal',
+  speed: 400,
   spaceBetween: 0,
   loop: true,
   freeMode: false,
