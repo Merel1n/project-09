@@ -10,8 +10,8 @@ export const refs = {
   modalContainer: document.querySelector('.modal-container'),
   menu: document.querySelector('.menu'),
   menuList: document.querySelector('.menu-list'),
-  projectsNextButton: document.querySelector('.swiper-button-next'),
-  projectsPrevButton: document.querySelector('.swiper-button-prev'),
+  projectsNextButton: document.querySelector('.projects-btn-next'),
+  projectsPrevButton: document.querySelector('.projects-button-prev'),
 };
 
 

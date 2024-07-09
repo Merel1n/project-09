@@ -3,6 +3,7 @@ import Swiper from 'swiper/bundle';
 
 // import styles bundle
 import 'swiper/css/bundle';
+
 const swiper_pr = new Swiper('.swiper-pr', {
     direction: 'horizontal',
     navigation: {
@@ -11,18 +12,18 @@ const swiper_pr = new Swiper('.swiper-pr', {
     },
 
     slidesPerView: 1,
-    // spaceBetween: 34,
-    autoplay: {
-        delay: 3000,
-    },
-    breakpoints: {
-        320: {
-            spaceBetween: 16,
-        },
-        375: {
-            spaceBetween: 34,
-        },
-    },
+    spaceBetween: 34,
+    // autoplay: {
+    //     delay: 3000,
+    // },
+    // breakpoints: {
+    //     320: {
+    //         spaceBetween: 16,
+    //     },
+    //     375: {
+    //         spaceBetween: 34,
+    //     },
+    // },
     keyboard: {
         enabled: true,
         onlyInViewport: false,
