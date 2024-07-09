@@ -189,22 +189,23 @@
     padding-bottom: 32px;
   }
 
-  svg {
-    width: 20px;
-    height: 20px;
-  }
-
   .am-accord-btn-icon {
     width: 40px;
     height: 40px;
     padding: 9px;
   }
 
+  .am-icon-btn-down,
+  .am-icon-btn-up {
+    width: 20px;
+    height: 20px;
+  }
+
   .ac-panel.am-accord-panel {
     gap: 16px;
   }
 
-  br {
+  .br-am {
     display: none;
   }
 }
@@ -220,7 +221,7 @@
     margin-left: 696px;
   }
 
-  br {
+  .br-am {
     display: block;
   }
 }
@@ -255,7 +256,7 @@
 }
 
 .swiper-slide.swiper-slide-am:first-child,
-.swiper-slide.swiper-slide-active {
+.swiper-slide.swiper-slide-active.swiper-slide-am {
   border: none;
   background-color: #ed3b44;
 }
@@ -275,7 +276,7 @@
     font-size: 20px;
   }
 
-  svg {
+  .sw-btn-next {
     width: 40px;
     height: 40px;
   }
