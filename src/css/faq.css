@@ -55,8 +55,8 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 50px;
   padding: 0px;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   padding: 7px;
   background: #1c1d20;
 }
@@ -76,6 +76,22 @@
   .faq-el {
     border-top: 1px solid rgba(250, 250, 250, 0.4);
     border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+  }
+  .faq-btn {
+    display: block;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 50px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    background: #1c1d20;
+  }
+  .an-icon-button-down,
+  .an-icon-button-up {
+    display: none;
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -101,5 +117,15 @@
   .an-icon-button-down,
   .an-icon-button-up {
     display: none;
+  }
+  .faq-btn {
+    display: block;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 50px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    background: #1c1d20;
   }
 }
