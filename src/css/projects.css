@@ -44,7 +44,7 @@
     width: 343px;
     height: 395px;
     align-content: center;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 
@@ -114,9 +114,7 @@
     flex-wrap: wrap;
     justify-content: center;
     justify-self: right;
-    margin: 0;
-    vertical-align: top;
-    align-items: right;
+    margin: 0 auto;
   }
 }
 
