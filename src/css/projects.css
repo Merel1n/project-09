@@ -5,29 +5,73 @@
 
 .projects-items {
     min-width: 320px;
-    height: 812px;
-    background: linear-gradient(rgb(255, 255, 255) 53%, rgba(36, 37, 39, 1) 47%);
-    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
     .projects-items {
         min-width: 704px;
-        height: 1191px;
-        background: #FAFAFA;
-        border-radius: 24px;
-        background: linear-gradient(rgb(255, 255, 255) 50%, rgba(36, 37, 39, 1) 50%);
     }
 }
 
 @media screen and (min-width: 1440px) {
     .projects-items {
         min-width: 1440px;
-        height: 625px;
-        border-radius: 24px;
-        background: linear-gradient(to right, rgb(255, 255, 255) 50%, rgba(36, 37, 39, 1) 50%);
+        flex-direction: row;
     }
 }
+
+.projects-picture {
+    background-color: rgba(36, 37, 39, 1);
+    border-radius: 0 0 24px 24px;
+    width: 343px;
+    height: 395px;
+    align-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .projects-picture {
+        width: 704px;
+        height: 625px;
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .projects-picture {
+        border-radius: 0 24px 24px 0;
+        width: 688px;
+        height: 637px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+.projects-container {
+    background: #FAFAFA;
+    padding-left: 32px;
+    border-radius: 24px 24px 0 0;
+
+}
+
+@media screen and (min-width: 768px) {
+    .projects-container {
+        padding-left: 64px;
+        border-radius: 24px 24px 0 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .projects-container {
+        padding-left: 64px;
+        border-radius: 24px 0 0 24px;
+        width: 688px;
+
+    }
+}
+
+
 
 .projects-title {
     font-family: Inter Tight;
@@ -41,14 +85,12 @@
 }
 
 .projects-img {
-
     margin: 0 auto;
-    margin-top: 132px;
 }
 
 @media screen and (min-width: 768px) {
     .projects-img {
-        margin-top: 184px;
+        margin: 0 auto;
     }
 }
 
@@ -62,7 +104,6 @@
         margin: 0;
         vertical-align: top;
         align-items: right;
-        gap: 100px;
     }
 }
 
@@ -75,59 +116,42 @@
     line-height: 28px;
     letter-spacing: -0.03em;
     color: #1C1D20;
-    padding-left: 32px;
-    padding-top: 96px;
+    padding-bottom: 32px;
+
 }
 
 @media screen and (min-width: 768px) {
     .projects-list-text {
         font-size: 44px;
         line-height: 44px;
-        padding-left: 64px;
-        padding-top: 164px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .projects-list-text {
-        font-size: 44px;
-        line-height: 44px;
-        padding-left: 64px;
-        padding-top: 223px;
     }
 }
 
 .projects-tech {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
     gap: 6px;
-    padding-left: 32px;
-    padding-top: 32px;
+    margin-top: 32px;
+    margin-bottom: 96px;
+
 }
 
 @media screen and (min-width: 768px) {
     .projects-tech {
-        padding-left: 64px;
-        padding-top: 64px;
+        margin-top: 64px;
+        margin-bottom: 164px;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .projects-tech {
-        padding-left: 64px;
-        padding-top: 64px;
+        margin-bottom: 223px;
     }
 }
 
 .projects-tech-items {
-    box-sizing: border-box;
-    display: block;
     text-align: center;
     padding: 13px 18px;
-    max-width: 100px;
     border: 1px solid rgba(28, 29, 32, 0.4);
     color: rgba(28, 29, 32, 1);
     border-radius: 60px;
@@ -139,46 +163,25 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .projects-tech-items {
-        padding: 18px;
-    }
-}
-
 .see-project {
-    /* btn */
     font-family: 'Inter Tight';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
     letter-spacing: -0.02em;
     color: #FAFAFA;
-    display: block;
+    display: inline-block;
     padding: 13px 32px;
     align-items: center;
     background: #ED3B44;
     border-radius: 60px;
-    margin-left: 32px;
-    margin-top: 32px;
-    width: 141px;
+    min-width: 141px;
+    margin-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) {
     .see-project {
         padding: 18px 50px;
-        margin-left: 64px;
-        width: 177px;
-        height: 55px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .see-project {
-        padding: 18px 50px;
-        margin-left: 64px;
-        width: 180px;
-        height: 55px;
-        color: #FAFAFA;
+        min-width: 177px;
+        margin-bottom: 64px;
     }
 }

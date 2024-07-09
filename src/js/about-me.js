@@ -1,18 +1,37 @@
-import Accordion from 'accordion-js';
+import Accord from 'accordion-js';
+import Swiper from 'swiper/bundle';
 
-new Accordion('.accordion-container', {
+new Accord('.accord-container', {
   duration: 400,
   openOnInit: [0],
-  onOpen: function (currentElement) {
-    const down = currentElement.querySelector('.am-icon-button-down');
-    const up = currentElement.querySelector('.am-icon-button-up');
-    down.classList.toggle('open');
-    up.classList.toggle('open');
+});
+
+new Swiper('.swiper-am', {
+  direction: 'horizontal',
+  spaceBetween: 0,
+  loop: true,
+  freeMode: false,
+  navigation: {
+    nextEl: '.button-next',
   },
-  onClose: function (currentElement) {
-    const down = currentElement.querySelector('.am-icon-button-down');
-    const up = currentElement.querySelector('.am-icon-button-up');
-    down.classList.toggle('open');
-    up.classList.toggle('open');
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      width: 260,
+    },
+    768: {
+      slidesPerView: 3,
+      width: 600,
+    },
+    1440: {
+      slidesPerView: 6,
+      width: 1200,
+    },
   },
 });
