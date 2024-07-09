@@ -24,12 +24,16 @@
 }
 
 @media screen and (max-width: 374px) {
+  .projects-img {
+    margin: 0 auto;
+    object-fit: cover;
+  }
   .projects-picture {
     background-color: rgba(36, 37, 39, 1);
     border-radius: 0 0 24px 24px;
     align-content: center;
     max-width: 343px;
-    max-height: 395px;
+    height: 395px;
   }
 }
 
@@ -40,6 +44,7 @@
     width: 343px;
     height: 395px;
     align-content: center;
+    margin: 0 auto;
   }
 }
 
@@ -100,12 +105,6 @@
 
 .projects-img {
   margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-  .projects-img {
-    margin: 0 auto;
-  }
 }
 
 @media screen and (min-width: 1440px) {
