@@ -1,9 +1,9 @@
 .section-work-together {
   padding-top: 32px;
   padding-bottom: 32px;
-  background: image-set(
-    url(../img/footer/bg-mobile.png) 1x,
-    url(../img/footer/bg-mobile@2x.png) 2x
+  background-image: -webkit-image-set(
+    url('../img/footer/bg-mobile.png') 1x,
+    url('../img/footer/bg-mobile@2x.png') 2x
   );
   background-repeat: no-repeat;
   background-position: right center;
@@ -14,7 +14,7 @@
   .section-work-together {
     padding-top: 80px;
     padding-bottom: 169px;
-    background: image-set(
+    background-image: -webkit-image-set(
       url(../img/footer/bg-tablet.png) 1x,
       url(../img/footer/bg-tablet@2x.png) 2x
     );
@@ -26,7 +26,7 @@
 
 @media screen and (min-width: 1440px) {
   .section-work-together {
-    background: image-set(
+    background-image: -webkit-image-set(
       url(../img/footer/bg-desktop.png) 1x,
       url(../img/footer/bg-desktop@2x.png) 2x
     );
