@@ -35,7 +35,6 @@
     .projects-picture {
         width: 704px;
         height: 625px;
-
     }
 }
 
@@ -53,7 +52,6 @@
     background: #FAFAFA;
     padding-left: 32px;
     border-radius: 24px 24px 0 0;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -70,8 +68,6 @@
         width: 688px;
     }
 }
-
-
 
 .projects-title {
     font-family: Inter Tight;
@@ -117,7 +113,6 @@
     letter-spacing: -0.03em;
     color: #1C1D20;
     padding-bottom: 32px;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -133,7 +128,6 @@
     gap: 6px;
     margin-top: 32px;
     margin-bottom: 96px;
-
 }
 
 @media screen and (min-width: 768px) {

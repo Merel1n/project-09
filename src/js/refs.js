@@ -13,5 +13,5 @@ export const refs = {
   projectsNextButton: document.querySelector('.swiper-button-next'),
   projectsPrevButton: document.querySelector('.swiper-button-prev'),
 };
-  
+
 
