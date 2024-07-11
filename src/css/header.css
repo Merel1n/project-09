@@ -18,16 +18,11 @@
 }
 .logo-img {
   border-radius: 18px;
-  width: 80px;
-  height: 80px;
   object-fit: cover;
   margin-left: 8px;
 }
 
 .logo-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 18px;
   border: none;
   overflow: hidden;
 }
@@ -35,8 +30,6 @@
   .burger-menu {
     background-color: transparent;
     border: none;
-    stroke: #fafafa;
-    fill: #fafafa;
   }
 
   .menu {
@@ -61,12 +54,8 @@
     align-items: flex-start;
   }
   .menu {
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 500;
     font-size: 16px;
-    letter-spacing: -0.02em;
     text-decoration: underline;
-    text-decoration-skip-ink: none;
     color: #fafafa;
     background-color: transparent;
     border: none;
@@ -103,9 +92,5 @@
     min-width: 163px;
     background: #ed3b44;
     text-align: center;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .menu {
   }
 }

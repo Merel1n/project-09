@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Inter Tight';
+  src: local('Inter Tight'), url('./InterTight-Medium.ttf') format('truetype'),
+    url('./InterTight-SemiBold.ttf') format('truetype');
+}
 :root {
   font-family: 'Inter Tight', sans-serif;
   font-size: 16px;
@@ -21,7 +26,6 @@
 /* Reset styles */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
 }
 
 h1,
