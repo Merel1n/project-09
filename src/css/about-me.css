@@ -4,7 +4,6 @@
 }
 
 .about-me-title {
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -28,13 +27,11 @@
 }
 
 .about-me-subtitle {
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #fafafa;
 }
 
 .color-red {
@@ -119,7 +116,6 @@
   border: none;
   background-color: transparent;
   padding: 0;
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -167,12 +163,7 @@
 }
 
 .ac-text.am-accord-text {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
   letter-spacing: -0.02em;
-  color: #fafafa;
 }
 
 .ac-text.education-first {
@@ -225,12 +216,14 @@
     display: block;
   }
 }
-
-.swiper.swiper-am {
-  width: 343px;
+.about-me-swiper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.swiper.swiper-am {
+  width: 260px;
+  margin-left: 0;
 }
 
 .swiper-wrapper.swiper-wrapper-am {
@@ -247,12 +240,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
   letter-spacing: -0.02em;
-  color: #fafafa;
 }
 
 .swiper-slide.swiper-slide-am:first-child,
@@ -262,13 +251,9 @@
 }
 
 .button-next-wrapper {
-  width: 83px;
-  height: 130px;
   display: flex;
   justify-content: right;
   align-items: center;
-  background: #1c1d20;
-  z-index: 10;
 }
 
 .button-next {
@@ -282,7 +267,7 @@
 
 @media only screen and (min-width: 768px) {
   .swiper.swiper-am {
-    width: 704px;
+    width: 600px;
   }
 
   .swiper-wrapper.swiper-wrapper-am {
@@ -313,11 +298,10 @@
 
 @media only screen and (min-width: 1440px) {
   .swiper.swiper-am {
-    width: 1376px;
+    width: 1200px;
   }
 
   .swiper.swiper-am {
-    width: 1312px;
     margin-left: auto;
     margin-right: auto;
   }

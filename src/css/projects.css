@@ -93,14 +93,14 @@
 }
 
 .projects-title {
-  font-family: Inter Tight;
   font-size: 16px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: -0.02em;
   text-align: left;
   color: rgba(250, 250, 250, 0.4);
   margin-bottom: 32px;
+  text-transform: uppercase;
 }
 
 .projects-img {
@@ -119,11 +119,6 @@
 }
 
 .projects-list-text {
-  font-family: 'Inter Tight';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
   letter-spacing: -0.03em;
   color: #1c1d20;
   padding-bottom: 32px;
