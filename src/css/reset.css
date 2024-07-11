@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Inter Tight';
-  src: local('Inter Tight'), url('./InterTight-Medium.ttf') format('truetype'),
-    url('./InterTight-SemiBold.ttf') format('truetype');
+  src: local('Inter Tight'), url('./inter-tight-medium.ttf') format('truetype'),
+    url('./inter-tight-semi-bold.ttf') format('truetype');
 }
 :root {
   font-family: 'Inter Tight', sans-serif;
