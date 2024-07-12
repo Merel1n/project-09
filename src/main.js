@@ -5,6 +5,7 @@ import { refs } from './js/refs';
 import './js/projects';
 import './js/work-together';
 import './js/about-me';
+import './js/scroll-up';
 import { observer } from './js/covers';
 import { isOpenMenu } from './js/modal-menu';
 import { closeMenu } from './js/modal-menu';
