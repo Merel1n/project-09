@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 16px 16px;
+  padding: 32px 16px;
   background-color: transparent;
 }
 .logo {
@@ -26,12 +26,19 @@
   border: none;
   overflow: hidden;
 }
-@media screen and (max-width: 767px) {
-  .burger-menu {
-    background-color: transparent;
-    border: none;
-  }
 
+.burger-menu {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 767px) {
   .menu {
     display: none;
   }
