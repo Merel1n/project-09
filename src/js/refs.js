@@ -8,4 +8,5 @@ export const refs = {
   modalContainer: document.querySelector('.modal-container'),
   menu: document.querySelector('.menu'),
   menuList: document.querySelector('.menu-list'),
+  body: document.querySelector('body'),
 };

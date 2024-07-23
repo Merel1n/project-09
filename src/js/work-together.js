@@ -11,6 +11,7 @@ const refs = {
   commentsWrapper: document.querySelector('.comments-wrapper'),
   inputSuccess: document.querySelector('.input-success'),
   inputInvalid: document.querySelector('.input-invalid'),
+  body: document.querySelector('body'),
 };
 
 refs.form.addEventListener('submit', async e => {
@@ -29,6 +30,7 @@ refs.form.addEventListener('submit', async e => {
       return;
     }
     refs.modal.classList.remove('visually-hidden');
+    refs.body.classList.add('no-scroll');
 
     refs.form.reset();
   } catch (error) {
@@ -46,12 +48,14 @@ refs.modal.addEventListener('click', e => {
   const { className } = e.target;
   if (className === 'modal-backdrop' || className === 'close-button') {
     refs.modal.classList.add('visually-hidden');
+    refs.body.classList.remove('no-scroll');
   }
 });
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' || e.key === 'Esc') {
     refs.modal.classList.add('visually-hidden');
+    refs.body.classList.remove('no-scroll');
   }
 });
 // =============================

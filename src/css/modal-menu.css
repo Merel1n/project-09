@@ -100,6 +100,10 @@
   justify-content: center;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 @media screen and (min-resolution: 192dpi) and (min-width: 375px) {
   .modal-container {
     background-image: url('../img/hero/bg-mobile@2x.png');
