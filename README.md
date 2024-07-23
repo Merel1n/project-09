@@ -1,33 +1,65 @@
 Our team "BLEND’S":
 
-<!-- Header, Hero, Modal Menu -->
+<!--  -->
+
+Header, Hero, Modal Menu
+
+<!--  -->
 
 Inna Matviienko - Merel1n - Team Leader, Developer
 
-<!-- About me, Scroll Up -->
+<!--  -->
+
+About me, Scroll Up
+
+<!--  -->
 
 Tatyana Chuiko - MitNameTatyana - Developer
 
-<!-- Benefits -->
+<!--  -->
+
+Benefits
+
+<!--  -->
 
 Olena Tyshchenko - lenaronne - Developer
 
-<!-- Project -->
+<!--  -->
+
+Project
+
+<!--  -->
 
 Soboliev Yurii - joshua1312 - Developer
 
-<!-- FAQ -->
+<!--  -->
+
+FAQ
+
+<!--  -->
 
 Zaverzaiev Anton - AnZave - Developer
 
-<!-- Covers -->
+<!--  -->
+
+Covers
+
+<!--  -->
 
 Svitlana Havrylets - svitlanahavrylets - Scram Master, Developer
 
-<!-- Reviews -->
+<!--  -->
+
+Reviews
+
+<!--  -->
 
 Liashko Aleksandr - Karlson1979 - Developer
 
-<!-- Work together -->
+<!--  -->
+
+Work together
+
+<!--  -->
 
 Roman Zubacha - Zubaha - Developer
